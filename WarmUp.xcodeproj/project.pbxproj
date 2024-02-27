@@ -14,6 +14,7 @@
 		458318E42B8CC52800365147 /* WarmUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458318E32B8CC52800365147 /* WarmUpTests.swift */; };
 		458318EE2B8CC52800365147 /* WarmUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458318ED2B8CC52800365147 /* WarmUpUITests.swift */; };
 		458318F02B8CC52800365147 /* WarmUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458318EF2B8CC52800365147 /* WarmUpUITestsLaunchTests.swift */; };
+		45844F1B2B8E0B2100F62CBF /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45844F1A2B8E0B2100F62CBF /* SimpleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		458318E92B8CC52800365147 /* WarmUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarmUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		458318ED2B8CC52800365147 /* WarmUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpUITests.swift; sourceTree = "<group>"; };
 		458318EF2B8CC52800365147 /* WarmUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45844F1A2B8E0B2100F62CBF /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				458318D42B8CC52700365147 /* ContentView.swift */,
 				458318D62B8CC52800365147 /* Assets.xcassets */,
 				458318D82B8CC52800365147 /* Preview Content */,
+				45844F1A2B8E0B2100F62CBF /* SimpleView.swift */,
 			);
 			path = WarmUp;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				458318D52B8CC52700365147 /* ContentView.swift in Sources */,
+				45844F1B2B8E0B2100F62CBF /* SimpleView.swift in Sources */,
 				458318D32B8CC52700365147 /* WarmUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
