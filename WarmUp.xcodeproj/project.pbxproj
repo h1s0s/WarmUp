@@ -15,6 +15,7 @@
 		458318EE2B8CC52800365147 /* WarmUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458318ED2B8CC52800365147 /* WarmUpUITests.swift */; };
 		458318F02B8CC52800365147 /* WarmUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458318EF2B8CC52800365147 /* WarmUpUITestsLaunchTests.swift */; };
 		45844F1B2B8E0B2100F62CBF /* SimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45844F1A2B8E0B2100F62CBF /* SimpleView.swift */; };
+		45844F1E2B8E0E8100F62CBF /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45844F1D2B8E0E8100F62CBF /* Layout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		458318ED2B8CC52800365147 /* WarmUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpUITests.swift; sourceTree = "<group>"; };
 		458318EF2B8CC52800365147 /* WarmUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		45844F1A2B8E0B2100F62CBF /* SimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleView.swift; sourceTree = "<group>"; };
+		45844F1D2B8E0E8100F62CBF /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +98,11 @@
 		458318D12B8CC52700365147 /* WarmUp */ = {
 			isa = PBXGroup;
 			children = (
+				45844F1C2B8E0E5C00F62CBF /* 01 */,
 				458318D22B8CC52700365147 /* WarmUpApp.swift */,
 				458318D42B8CC52700365147 /* ContentView.swift */,
 				458318D62B8CC52800365147 /* Assets.xcassets */,
 				458318D82B8CC52800365147 /* Preview Content */,
-				45844F1A2B8E0B2100F62CBF /* SimpleView.swift */,
 			);
 			path = WarmUp;
 			sourceTree = "<group>";
@@ -128,6 +130,15 @@
 				458318EF2B8CC52800365147 /* WarmUpUITestsLaunchTests.swift */,
 			);
 			path = WarmUpUITests;
+			sourceTree = "<group>";
+		};
+		45844F1C2B8E0E5C00F62CBF /* 01 */ = {
+			isa = PBXGroup;
+			children = (
+				45844F1A2B8E0B2100F62CBF /* SimpleView.swift */,
+				45844F1D2B8E0E8100F62CBF /* Layout.swift */,
+			);
+			path = 01;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +273,7 @@
 			files = (
 				458318D52B8CC52700365147 /* ContentView.swift in Sources */,
 				45844F1B2B8E0B2100F62CBF /* SimpleView.swift in Sources */,
+				45844F1E2B8E0E8100F62CBF /* Layout.swift in Sources */,
 				458318D32B8CC52700365147 /* WarmUpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
