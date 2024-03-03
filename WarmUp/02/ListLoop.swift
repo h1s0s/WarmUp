@@ -16,7 +16,9 @@ struct ListLoop: View {
     ]
     var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elder Berry"]
     
-    @State var fruitName: String = ""
+    @State var fruitName: String = "" //바인딩 String 필드
+    //State 필드는 값이 변하면 화면을 다시 그림.
+    
     var body: some View {
         NavigationStack {
             VStack {
