@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ListLoop: View {
-    var favoriteFruits = [
+    @State var favoriteFruits = [
         Fruit(name: "Apple", matchFruitName: "Banana", price: 1000),
         Fruit(name: "Banana", matchFruitName: "Banana", price: 3000),
         Fruit(name: "Cherry", matchFruitName: "Durian", price: 4000),
@@ -16,8 +16,25 @@ struct ListLoop: View {
     ]
     var fruits = ["Apple", "Banana", "Cherry", "Durian", "Elder Berry"]
     
+    @State var fruitName: String = ""
     var body: some View {
         NavigationStack {
+            VStack {
+                HStack {
+                    TextField("insert fruit name", text: $fruitName)
+                        .padding()
+                    
+                    Button {
+                        favoriteFruits.append(Fruit(name: fruitName, matchFruitName: "Apple", price: 1000))
+                    } label: {
+                        Text("Insert")
+                            .padding()
+                            .background(.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(20)
+                    }
+                }
+            }
             List {
                 ForEach(favoriteFruits, id: \.self) { fruit in
                     HStack {
@@ -25,6 +42,8 @@ struct ListLoop: View {
                         Text(fruit.matchFruitName)
                         Text("\(fruit.price)")
                     }
+                }.onDelete { indexSet in //Delete 버튼이 눌렸을 때 이벤트
+                    favoriteFruits.remove(atOffsets: indexSet)
                 }
             }
             .navigationTitle("Fruist List")
